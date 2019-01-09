@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DM Companion</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body onload="setup()">
+        <div id="encounterDistanceContainer">
+            <h1>Encounter Distance</h1>
+
+            <div id="encounterTilesContainer">
+                <div id="desert" class="encounter-tile"><span>Desert</span></div>
+                <div id="dunes" class="encounter-tile"><span>Dunes</span></div>
+                <div id="dforest" class="encounter-tile"><span>Forest (Deep)</span></div>
+                <div id="mforest" class="encounter-tile"><span>Forest (Medium)</span></div>
+                <div id="sforest" class="encounter-tile"><span>Forest (Sparse)</span></div>
+                <div id="ghills" class="encounter-tile"><span>Hill (Gentle)</span></div>
+                <div id="rhills" class="encounter-tile"><span>Hill (Rugged)</span></div>
+                <div id="distanceBox" class="encounter-tile"></div>
+                <div id="moor" class="encounter-tile"><span>Marsh (Moor)</span></div>
+                <div id="swamp" class="encounter-tile"><span>Marsh (Swamp)</span></div>
+                <div id="mountains" class="encounter-tile"><span>Mountains</span></div>
+                <div id="plains" class="encounter-tile"><span>Plains</span></div>
+                <div id="urban" class="encounter-tile"><span>Urban</span></div>
+                <div id="cwater" class="encounter-tile"><span>Water (Clear)</span></div>
+                <div id="mwater" class="encounter-tile"><span>Water (Murky)</span></div>
+            </div>
+
+        </div>
+
+        <script src="js/app.js"></script>
+        <script src="js/die-roller.js"></script>
+    </body>
+</html>
