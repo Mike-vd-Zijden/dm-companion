@@ -7,8 +7,22 @@
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body onload="setup()">
+        <div id="perceptionDistanceContainer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="perceptionMenuContainer">
+            <span>Highest Perception:</span>
+            <input id="perceptionInput" type="text" name="perception">
+            <span>Max distance to spot:</span>
+            <span id="maxDistance" style="color: lightgrey">0ft/0"</span>
+            <br>
+            <span style="font-size:smaller;font-weight:normal">+20ft/4" to -50ft/-10"</span>
+        </div>
+
         <div id="encounterDistanceContainer">
-            <h1>Encounter Distance</h1>
+            <span id="encounterCollapse">Encounter Distance</span>
 
             <div id="encounterTilesContainer">
                 <div id="desert" class="encounter-tile"><span>Desert</span></div>
