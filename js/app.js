@@ -29,6 +29,226 @@ const fateChance = {
     'hasToBe': {1: 80, 2: 85, 3: 90, 4: 95, 5: 95, 6: 100, 7: 100, 8: 130, 9: 145},
 };
 
+const event = {
+    'focus': {
+        7: "Remote event",
+        28: "NPC action",
+        35: "Introduce a new NPC",
+        45: "Move toward a thread",
+        52: "Move away from a thread",
+        55: "Close a thread",
+        67: "PC negative",
+        75: "PC positive",
+        83: "Ambuguous event",
+        92: "NPC negative",
+        100: "NPC positive"
+    },
+    'action': {
+        1: "Attainment",
+        2: "Starting",
+        3: "Neglect",
+        4: "Fight",
+        5: "Recruit",
+        6: "Triumph",
+        7: "Violate",
+        8: "Oppose",
+        9: "Malice",
+        10: "Communicate",
+        11: "Persecute",
+        12: "Increase",
+        13: "Decrease",
+        14: "Abandon",
+        15: "Gratify",
+        16: "Inquire",
+        17: "Antagonise",
+        18: "Move",
+        19: "Waste",
+        20: "Truce",
+        21: "Release",
+        22: "Befriend",
+        23: "Judge",
+        24: "Desert",
+        25: "Dominate",
+        26: "Procrastinate",
+        27: "Praise",
+        28: "Separate",
+        29: "Take",
+        30: "Break",
+        31: "Heal",
+        32: "Delay",
+        33: "Stop",
+        34: "Lie",
+        35: "Return",
+        36: "Immitate",
+        37: "Struggle",
+        38: "Inform",
+        39: "Bestow",
+        40: "Postpone",
+        41: "Expose",
+        42: "Haggle",
+        43: "Imprison",
+        44: "Release",
+        45: "Celebrate",
+        46: "Develop",
+        47: "Travel",
+        48: "Block",
+        49: "Harm",
+        50: "Debase",
+        51: "Overindulge",
+        52: "Adjourn",
+        53: "Adversity",
+        54: "Kill",
+        55: "Disrupt",
+        56: "Usurp",
+        57: "Create",
+        58: "Betray",
+        59: "Agree",
+        60: "Abuse",
+        61: "Oppress",
+        62: "Inspect",
+        63: "Ambush",
+        64: "Spy",
+        65: "Attach",
+        66: "Carry",
+        67: "Open",
+        68: "Carelessness",
+        69: "Ruin",
+        70: "Extravagance",
+        71: "Trick",
+        72: "Arrive",
+        73: "Propose",
+        74: "Divide",
+        75: "Refuse",
+        76: "Mistrust",
+        77: "Deceive",
+        78: "Cruelty",
+        79: "Intolerance",
+        80: "Trust",
+        81: "Excitement",
+        82: "Activity",
+        83: "Assist",
+        84: "Care",
+        85: "Negligence",
+        86: "Passion",
+        87: "Work hard",
+        88: "Control",
+        89: "Attract",
+        90: "Failure",
+        91: "Pursue",
+        92: "Vengeance",
+        93: "Proceedings",
+        94: "Dispute",
+        95: "Punish",
+        96: "Guide",
+        97: "Transform",
+        98: "Overthrow",
+        99: "Oppress",
+        100: "Change",
+    },
+    'subject': {
+        1: "Goals",
+        2: "Dreams",
+        3: "Environment",
+        4: "Outside",
+        5: "Inside",
+        6: "Reality",
+        7: "Allies",
+        8: "Enemies",
+        9: "Evil",
+        10: "Good",
+        11: "Emotions",
+        12: "Opposition",
+        13: "War",
+        14: "Peace",
+        15: "The innocent",
+        16: "Love",
+        17: "The spiritual",
+        18: "The intellectual",
+        19: "New ideas",
+        20: "Joy",
+        21: "Messages",
+        22: "Energy",
+        23: "Balance",
+        24: "Tension",
+        25: "Friendship",
+        26: "The physical",
+        27: "A project",
+        28: "Pleasures",
+        29: "Pain",
+        30: "Possessions",
+        31: "Benefits",
+        32: "Plans",
+        33: "Lies",
+        34: "Expectations",
+        35: "Legal matters",
+        36: "Bureaucracy",
+        37: "Business",
+        38: "A path",
+        39: "News",
+        40: "Exterior factors",
+        41: "Advice",
+        42: "A plot",
+        43: "Competition",
+        44: "Prison",
+        45: "Illness",
+        46: "Food",
+        47: "Attention",
+        48: "Success",
+        49: "Failure",
+        50: "Travel",
+        51: "Jealousy",
+        52: "Dispute",
+        53: "Home",
+        54: "Investment",
+        55: "Suffering",
+        56: "Wishes",
+        57: "Tactics",
+        58: "Stalemate",
+        59: "Randomness",
+        60: "Misfortune",
+        61: "Death",
+        62: "Disruption",
+        63: "Power",
+        64: "A burden",
+        65: "Intrigues",
+        66: "Fears",
+        67: "Ambush",
+        68: "Rumor",
+        69: "Wounds",
+        70: "Extravagance",
+        71: "A representative",
+        72: "Adversities",
+        73: "Opulence",
+        74: "Liberty",
+        75: "Military",
+        76: "The mundane",
+        77: "Trials",
+        78: "Masses",
+        79: "Vehicle",
+        80: "Art",
+        81: "Victory",
+        82: "Dispute",
+        83: "Riches",
+        84: "Status quo",
+        85: "Technology",
+        86: "Hope",
+        87: "Magic",
+        88: "Illusions",
+        89: "Portals",
+        90: "Danger",
+        91: "Weapons",
+        92: "Animals",
+        93: "Weather",
+        94: "Elements",
+        95: "Nature",
+        96: "The public",
+        97: "Leadership",
+        98: "Fame",
+        99: "Anger",
+        100: "Information",
+    },
+};
+
 const encounterContainer = document.getElementById('encounterTilesContainer');
 const encounterCollapser = document.getElementById('encounterCollapse');
 const distanceTextField = document.getElementById('distanceBox');
@@ -38,6 +258,10 @@ const maxDistanceField = document.getElementById('maxDistance');
 
 const mythicContainer = document.getElementById('mythicContainer');
 const mythicCollapser = document.getElementById('mythicCollapse');
+
+const eventFocusContainer = document.getElementById('eventFocus');
+const eventActionContainer = document.getElementById('eventAction');
+const eventSubjectContainer = document.getElementById('eventSubject');
 
 let chaosFactor = 5;
 
@@ -68,8 +292,13 @@ function setup() {
 
     encounterCollapser.addEventListener('click', toggleTerrainTiles);
     mythicCollapser.addEventListener('click', toggleMythic);
+    document.getElementById('eventButton').addEventListener('click', generateEvent);
     document.getElementById('perceptionDistanceContainer').addEventListener('click', toggleHamburger);
     document.getElementById('perceptionInput').addEventListener('keyup', determineMaxSpotDistance);
+
+    eventFocusContainer.addEventListener('click', generateFocus);
+    eventActionContainer.addEventListener('click', generateAction);
+    eventSubjectContainer.addEventListener('click', generateSubject);
 }
 
 function getTerrainDistance(event) {
@@ -131,7 +360,7 @@ function setChaosFactor(event) {
 }
 
 function rollFate() {
-    let rollResult = roll('1d100');
+    let rollResult = d100();
     let chance = fateChance[this.id][chaosFactor];
 
     console.log(`Rolled ${rollResult} against chance ${chance}`);
@@ -149,6 +378,7 @@ function rollFate() {
 
     if (eventHappens(rollResult)) {
         fateResult += ' An event is triggered!';
+        generateEvent();
     }
 
     document.getElementById('result').innerText = fateResult;
@@ -175,4 +405,22 @@ function hotKeys(event) {
             toggleHamburger();
             break;
     }
+}
+
+function generateEvent() {
+    generateFocus();
+    generateAction();
+    generateSubject();
+}
+
+function generateFocus() {
+    eventFocusContainer.innerText = checkAgainstTable(event['focus'], d100());
+}
+
+function generateAction() {
+    eventActionContainer.innerText = checkAgainstTable(event['action'], d100());
+}
+
+function generateSubject() {
+    eventSubjectContainer.innerText = checkAgainstTable(event['subject'], d100());
 }

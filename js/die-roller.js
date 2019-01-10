@@ -5,6 +5,10 @@ const mathematician = {
     '*': function (x, y) { return x * y;},
 };
 
+function d100() {
+    return roll('1d100');
+}
+
 function roll(rollString) {
     let dissectedString = rollString.replace(/\s/g, '');
 
@@ -42,4 +46,17 @@ function roll(rollString) {
 
 function rollDie(dieSize) {
     return Math.floor(Math.random() * dieSize + 1);
+}
+
+function checkAgainstTable(table, rollResult) {
+    let rolledValue = '';
+
+    console.log(rollResult);
+    Object.keys(table).reverse().forEach(function (target) {
+        if (rollResult <= parseInt(target)) {
+            rolledValue = table[target];
+        }
+    });
+
+    return rolledValue;
 }

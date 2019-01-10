@@ -9,6 +9,10 @@
     max-height: 0;
     transition: max-height 0.2s ease-out;
     padding: 0 18px;
+    font-family: fantasy;
+    color:white;
+    text-shadow: -2px 0 2px black, 0 2px 2px black, 2px 0 2px black, 0 -2px 2px black;
+    font-size: 100%;
 
     display: flex;
     margin: 0 auto 0 auto;
@@ -41,10 +45,6 @@
     cursor: pointer;
 
     text-transform: uppercase;
-    color: white;
-    font-size: 100%;
-    font-family: fantasy;
-    text-shadow: -2px 0 2px black, 0 2px 2px black, 2px 0 2px black, 0 -2px 2px black;
 
     display: flex;
     justify-content: center;
@@ -76,10 +76,6 @@
     cursor: pointer;
 
     text-transform: uppercase;
-    color: white;
-    font-size: 100%;
-    font-family: fantasy;
-    text-shadow: -2px 0 2px black, 0 2px 2px black, 2px 0 2px black, 0 -2px 2px black;
 
     display: flex;
     justify-content: center;
@@ -96,8 +92,6 @@
     text-transform: uppercase;
     color: white;
     font-size: 200%;
-    font-family: fantasy;
-    text-shadow: -2px 0 2px black, 0 2px 2px black, 2px 0 2px black, 0 -2px 2px black;
     width:100%;
     text-align: center;
     margin: 5px;
@@ -107,4 +101,39 @@
 #result {
     height:40px;
     color: beige;
+}
+
+#eventButton {
+    vertical-align: middle;
+    text-align:center;
+    line-height:40px;
+    width: 200px;
+    height: 40px;
+    font-size: 150%;
+    border-radius: 10px;
+    border: darkslategrey solid 4px;
+    cursor:pointer;
+    background-color: rgba(50, 50, 150, 0.4);
+}
+
+#eventResult {
+    display:flex;
+    flex-wrap:wrap;
+    vertical-align: middle;
+    text-align:center;
+    line-height:40px;
+    width: 70%;
+    height: 40px;
+    font-size: 150%;
+    border-radius: 10px;
+    border: darkslategrey solid 4px;
+    background-color: rgba(10, 50, 10, 0.4);
+}
+
+#eventResult div {
+    cursor:pointer;
+    width:31%;
+    margin-left: 1%;
+    margin-right:1%;
+    font-size:80%;
 }
