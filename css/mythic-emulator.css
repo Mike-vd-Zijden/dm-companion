@@ -1,0 +1,110 @@
+#mythicCollapse {
+    cursor: pointer;
+}
+
+#mythicContainer {
+    width: 1200px;
+
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    padding: 0 18px;
+
+    display: flex;
+    margin: 0 auto 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fateContainer {
+    display: flex;
+    margin: 0 auto 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-image: linear-gradient(to right, darkred, red, darkorange, orange, yellow, lightgreen, green);
+
+    border-top: darkslategrey solid 2px;
+    border-bottom: darkslategrey solid 2px;
+    border-radius:100px;
+
+    width:100%;
+}
+
+.fate {
+    width: 90px;
+    margin: 0 5px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 100%;
+    font-family: fantasy;
+    text-shadow: -2px 0 2px black, 0 2px 2px black, 2px 0 2px black, 0 -2px 2px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chaosContainer {
+    display: flex;
+    margin: 0 auto 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /*background-image: linear-gradient(to right, darkred, red, darkorange, orange, yellow, lightgreen, green);*/
+
+    border-top: darkslategrey double 4px;
+    border-bottom: darkslategrey double 4px;
+    border-radius:40px;
+
+    width:60%;
+}
+
+.chaos {
+    width: 60px;
+    margin: 0 5px;
+    height: 60px;
+    vertical-align: middle;
+    text-align: center;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 100%;
+    font-family: fantasy;
+    text-shadow: -2px 0 2px black, 0 2px 2px black, 2px 0 2px black, 0 -2px 2px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus {
+    font-size:150%;
+    border: red double 5px;
+    border-radius:60px;
+}
+
+#mythicContainer span {
+    text-transform: uppercase;
+    color: white;
+    font-size: 200%;
+    font-family: fantasy;
+    text-shadow: -2px 0 2px black, 0 2px 2px black, 2px 0 2px black, 0 -2px 2px black;
+    width:100%;
+    text-align: center;
+    margin: 5px;
+
+}
+
+#result {
+    height:40px;
+    color: beige;
+}

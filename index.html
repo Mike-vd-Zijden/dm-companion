@@ -5,6 +5,9 @@
         <title>DM Companion</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/encounter-distance.css">
+        <link rel="stylesheet" href="css/perception-range.css">
+        <link rel="stylesheet" href="css/mythic-emulator.css">
     </head>
     <body onload="setup()">
         <div id="perceptionDistanceContainer">
@@ -22,7 +25,13 @@
         </div>
 
         <div id="encounterDistanceContainer">
-            <span id="encounterCollapse">Encounter Distance</span>
+            <header>
+                <div style="display:block;text-align:right;width:48%"><span
+                        id="encounterCollapse">Encounter Distance</span></div>
+                <div style="display:block;text-align:center;width:auto;">|</div>
+                <div style="display:block;text-align:left;width:48%"><span
+                        id="mythicCollapse">Game Master Emulator</span></div>
+            </header>
 
             <div id="encounterTilesContainer">
                 <div id="desert" class="encounter-tile"><span>Desert</span></div>
@@ -41,7 +50,35 @@
                 <div id="cwater" class="encounter-tile"><span>Water (Clear)</span></div>
                 <div id="mwater" class="encounter-tile"><span>Water (Murky)</span></div>
             </div>
+        </div>
 
+        <div id="mythicContainer">
+
+            <div id="eventButton">Generate Event!</div>
+            <div id="eventResult"></div>
+
+            <hr style="width:100%">
+
+            <span>Chaos Factor</span>
+            <div id="chaosContainer"></div>
+
+            <span>Fate table</span>
+            <div id="fateContainer">
+                <div id="impossible" class="fate">Impossible</div>
+                <div id="noWay" class="fate">No way</div>
+                <div id="veryUnlikely" class="fate">Very unlikely</div>
+                <div id="unlikely" class="fate">Unlikely</div>
+                <div id="fiftyfifty" class="fate">50/50</div>
+                <div id="somewhatLikely" class="fate">Somewhat likely</div>
+                <div id="likely" class="fate">Likely</div>
+                <div id="veryLikely" class="fate">Very likely</div>
+                <div id="nearSureThing" class="fate">Near sure thing</div>
+                <div id="aSureThing" class="fate">A sure thing</div>
+                <div id="hasToBe" class="fate">Has to be</div>
+            </div>
+
+            <span>Fate result: </span>
+            <span id="result"></span>
         </div>
 
         <script src="js/app.js"></script>

@@ -1,0 +1,110 @@
+#encounterCollapse {
+    cursor: pointer;
+}
+
+#encounterDistanceContainer {
+    width: 100%;
+}
+
+#encounterTilesContainer {
+    width: 1200px;
+
+    display: flex;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    padding: 0 18px;
+
+    margin: 0 auto 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.encounter-tile {
+    width: 220px;
+    height: 220px;
+    margin: 5px 5px 5px 5px;
+    vertical-align: middle;
+    text-align: center;
+    border: darkslategrey solid 5px;
+    border-radius: 60px;
+    cursor: pointer;
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 300%;
+    font-family: fantasy;
+    text-shadow: -2px 0 2px black, 0 2px 2px black, 2px 0 2px black, 0 -2px 2px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#distanceBox {
+    cursor: default;
+    color: beige;
+    font-size: 250%;
+    border-color: darkgoldenrod;
+}
+
+#desert {
+    background: url("../img/encounter-tiles/desert.jpg");
+}
+
+#dunes {
+    background: url("../img/encounter-tiles/dunes.jpg");
+}
+
+#dforest {
+    background: url("../img/encounter-tiles/dforest.jpg");
+}
+
+#mforest {
+    background: url("../img/encounter-tiles/mforest.jpg");
+}
+
+#sforest {
+    background: url("../img/encounter-tiles/sforest.jpg");
+}
+
+#ghills {
+    background: url("../img/encounter-tiles/ghills.jpg");
+}
+
+#rhills {
+    background: url("../img/encounter-tiles/rhills.jpg");
+}
+
+#distanceBox {
+    background: url("../img/encounter-tiles/distancebox.jpg");
+}
+
+#moor {
+    background: url("../img/encounter-tiles/moor.jpg");
+}
+
+#swamp {
+    background: url("../img/encounter-tiles/swamp.jpg");
+}
+
+#mountains {
+    background: url("../img/encounter-tiles/mountains.jpg");
+}
+
+#plains {
+    background: url("../img/encounter-tiles/plains.jpg");
+}
+
+#urban {
+    background: url("../img/encounter-tiles/urban.jpg");
+}
+
+#cwater {
+    background: url("../img/encounter-tiles/cwater.jpg");
+}
+
+#mwater {
+    background: url("../img/encounter-tiles/mwater.jpg");
+}
