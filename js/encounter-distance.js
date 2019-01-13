@@ -1,20 +1,3 @@
-const encounterDistances = {
-    'desert': '6d6*20',
-    'dunes': '6d6*10',
-    'dforest': '2d6*10',
-    'mforest': '2d8*10',
-    'sforest': '3d6*10',
-    'ghills': '2d10*10',
-    'rhills': '2d6*10',
-    'moor': '6d6*10',
-    'swamp': '2d8*10',
-    'mountains': '4d10*10',
-    'plains': '6d6*40',
-    'urban': '1d12*5',
-    'cwater': '4d8*10',
-    'mwater': '1d8*10',
-};
-
 const encounterContainer = document.getElementById('encounterTilesContainer');
 const encounterCollapser = document.getElementById('encounterCollapse');
 const distanceTextField = document.getElementById('distanceBox');

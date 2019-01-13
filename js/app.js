@@ -5,6 +5,7 @@ function setup() {
     setupEncounterDistance();
     setupMythic();
     setupPerception();
+    setupRaceGenerator();
 }
 
 function hotKeys(event) {
