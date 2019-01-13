@@ -51,7 +51,6 @@ function rollDie(dieSize) {
 function checkAgainstTable(table, rollResult) {
     let rolledValue = '';
 
-    console.log(rollResult);
     Object.keys(table).reverse().forEach(function (target) {
         if (rollResult <= parseInt(target)) {
             rolledValue = table[target];

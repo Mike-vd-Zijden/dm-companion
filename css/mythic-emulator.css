@@ -41,6 +41,7 @@
     height: 100px;
     vertical-align: middle;
     text-align: center;
+    font-size: 120%;
 
     cursor: pointer;
 
@@ -49,6 +50,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#fiftyfifty {
+    font-size: 180%;
 }
 
 #chaosContainer {

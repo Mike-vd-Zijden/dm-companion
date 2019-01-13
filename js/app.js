@@ -363,7 +363,6 @@ function rollFate() {
     let rollResult = d100();
     let chance = fateChance[this.id][chaosFactor];
 
-    console.log(`Rolled ${rollResult} against chance ${chance}`);
     let fateResult = 'No!';
 
     if (rollResult <= chance / 5) {
