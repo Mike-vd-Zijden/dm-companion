@@ -17,7 +17,7 @@ function hotKeys(event) {
             if (!mythicContainer.style.maxHeight) toggleMythic();
             break;
         case 'p':
-            toggleHamburger();
+            togglePerceptionHamburger();
             break;
     }
 }

@@ -3,11 +3,11 @@ const maxDistanceField = document.getElementById('maxDistance');
 const perceptionHamburger = document.getElementById('perceptionDistanceContainer');
 
 function setupPerception() {
-    document.getElementById('perceptionDistanceContainer').addEventListener('click', toggleHamburger);
+    document.getElementById('perceptionDistanceContainer').addEventListener('click', togglePerceptionHamburger);
 }
 
-function toggleHamburger() {
-    if (debug) console.log('toggleHamburger triggered');
+function togglePerceptionHamburger() {
+    if (debug) console.log('togglePerceptionHamburger triggered');
     perceptionContainer.classList.toggle('change');
     perceptionHamburger.classList.toggle('change');
     if (perceptionContainer.classList.contains('change')) {
@@ -23,6 +23,6 @@ function toggleHamburger() {
 function determineMaxSpotDistance(event) {
     if (debug) console.log('determineMaxSpotDistance triggered');
     let perception = this.value;
-    maxDistanceField.textContent = `${perception * 10}ft/${perception * 5}"`;
+    maxDistanceField.textContent = `${perception * 10}ft/${perception * 2}"`;
 }
 
