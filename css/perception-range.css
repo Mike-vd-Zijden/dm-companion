@@ -1,5 +1,4 @@
 #perceptionMenuContainer {
-    /*display:none;*/
     overflow: hidden;
     font-family: fantasy;
     color: white;
@@ -36,8 +35,3 @@
     width: 50px;
 }
 
-#perceptionDistanceContainer {
-    display: inline-block;
-    cursor: pointer;
-    position: absolute;
-}

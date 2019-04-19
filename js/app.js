@@ -1,11 +1,11 @@
+const hamburger = document.getElementById('hamburger');
 let debug = false;
 
 function setup() {
     document.addEventListener('keyup', hotKeys);
     setupEncounterDistance();
     setupMythic();
-    setupPerception();
-    setupRaceGenerator();
+    document.getElementById('hamburger').addEventListener('click', toggleHamburger);
 }
 
 function hotKeys(event) {
@@ -17,7 +17,15 @@ function hotKeys(event) {
             if (!mythicContainer.style.maxHeight) toggleMythic();
             break;
         case 'p':
-            togglePerceptionHamburger();
+            toggleHamburger();
             break;
     }
+}
+
+function toggleHamburger() {
+    if (debug) console.log('toggleHamburger triggered');
+    hamburger.classList.toggle('change');
+
+    togglePerceptionMenu();
+    toggleRaceMenu();
 }

@@ -48,7 +48,7 @@ function rollDie(dieSize) {
     return Math.floor(Math.random() * dieSize + 1);
 }
 
-function checkAgainstTable(table, rollResult) {
+function checkAgainstTable(table, rollResult = d100()) {
     let rolledValue = '';
 
     Object.keys(table).reverse().forEach(function (target) {
